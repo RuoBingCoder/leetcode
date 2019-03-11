@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/src/lintcode/UglyNumber.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/product/JingDongObserver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/product/ProductList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/product/TaoBaoObserver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/red_envelpe/RedPacket.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/service/Servisedemo1.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/testperson/Demo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/testperson/ShuiXianHua.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/thread/SellTicket.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/thread/ThreadTestOne.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/thread/ThreadTestTwo.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
