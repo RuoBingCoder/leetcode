@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/dataSources.local.xml
+.idea/dataSources/2ae6e7e5-3263-42c4-b78b-fd2a43359199.xml
+.idea/dataSources/87873f7e-b526-4b61-bc06-3f55a38c1d07/storage_v2/_src_/database/schoolwage.nBJW-g.meta
+.idea/dataSources/87873f7e-b526-4b61-bc06-3f55a38c1d07/storage_v2/_src_/database/schoolwage.nBJW-g/
+.idea/vcs.xml
+.idea/workspace.xml
+leetcode-plugin/en/[16]3Sum Closest.java
+leetcode-plugin/en/[2]Add Two Numbers.java
+leetcode-plugin/en/all.json
+out/
+src/io/dir/
+src/reflection/

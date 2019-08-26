@@ -1,20 +1,20 @@
 package thread;
 
 /**
- * @Authur: Ê¯½¨À×
- * @Date:2018/12/6 1¡¢Ã¿¸ö¶ÔÏó¶¼ÓÐÒ»¸öËøÀ´¿ØÖÆÍ¬²½·ÃÎÊ£¬Synchronized¹Ø¼ü×Ö¿ÉÒÔºÍ¶ÔÏóµÄËø½»»¥£¬
- * À´ÊµÏÖÍ¬²½·½·¨»òÍ¬²½¿é¡£sleep()·½·¨ÕýÔÚÖ´ÐÐµÄÏß³ÌÖ÷¶¯ÈÃ³öCPU£¨È»ºóCPU¾Í¿ÉÒÔÈ¥Ö´ÐÐÆäËûÈÎÎñ£©£¬
- * ÔÚsleepÖ¸¶¨Ê±¼äºóCPUÔÙ»Øµ½¸ÃÏß³Ì¼ÌÐøÍùÏÂÖ´ÐÐ(×¢Òâ£ºsleep·½·¨Ö»ÈÃ³öÁËCPU£¬¶ø²¢²»»áÊÍ·ÅÍ¬²½×ÊÔ´Ëø£¡£¡£¡)£»
- * wait()·½·¨ÔòÊÇÖ¸µ±Ç°Ïß³ÌÈÃ×Ô¼ºÔÝÊ±ÍËÈÃ³öÍ¬²½×ÊÔ´Ëø£¬ÒÔ±ãÆäËûÕýÔÚµÈ´ý¸Ã×ÊÔ´µÄÏß³ÌµÃµ½¸Ã×ÊÔ´½ø¶øÔËÐÐ£¬
- * Ö»ÓÐµ÷ÓÃÁËnotify()·½·¨£¬Ö®Ç°µ÷ÓÃwait()µÄÏß³Ì²Å»á½â³ýwait×´Ì¬£¬¿ÉÒÔÈ¥²ÎÓë¾ºÕùÍ¬²½×ÊÔ´Ëø£¬½ø¶øµÃµ½Ö´ÐÐ¡£
- * £¨×¢Òâ£ºnotifyµÄ×÷ÓÃÏàµ±ÓÚ½ÐÐÑË¯×ÅµÄÈË£¬¶ø²¢²»»á¸øËû·ÖÅäÈÎÎñ£¬¾ÍÊÇËµnotifyÖ»ÊÇÈÃÖ®Ç°µ÷ÓÃwaitµÄÏß³ÌÓÐÈ¨Àû
- * ÖØÐÂ²ÎÓëÏß³ÌµÄµ÷¶È£©£»
+ * @Authur: çŸ³å»ºé›·
+ * @Date:2018/12/6 1ã€æ¯ä¸ªå¯¹è±¡éƒ½æœ‰ä¸€ä¸ªé”æ¥æŽ§åˆ¶åŒæ­¥è®¿é—®ï¼ŒSynchronizedå…³é”®å­—å¯ä»¥å’Œå¯¹è±¡çš„é”äº¤äº’ï¼Œ
+ * æ¥å®žçŽ°åŒæ­¥æ–¹æ³•æˆ–åŒæ­¥å—ã€‚sleep()æ–¹æ³•æ­£åœ¨æ‰§è¡Œçš„çº¿ç¨‹ä¸»åŠ¨è®©å‡ºCPUï¼ˆç„¶åŽCPUå°±å¯ä»¥åŽ»æ‰§è¡Œå…¶ä»–ä»»åŠ¡ï¼‰ï¼Œ
+ * åœ¨sleepæŒ‡å®šæ—¶é—´åŽCPUå†å›žåˆ°è¯¥çº¿ç¨‹ç»§ç»­å¾€ä¸‹æ‰§è¡Œ(æ³¨æ„ï¼šsleepæ–¹æ³•åªè®©å‡ºäº†CPUï¼Œè€Œå¹¶ä¸ä¼šé‡Šæ”¾åŒæ­¥èµ„æºé”ï¼ï¼ï¼)ï¼›
+ * wait()æ–¹æ³•åˆ™æ˜¯æŒ‡å½“å‰çº¿ç¨‹è®©è‡ªå·±æš‚æ—¶é€€è®©å‡ºåŒæ­¥èµ„æºé”ï¼Œä»¥ä¾¿å…¶ä»–æ­£åœ¨ç­‰å¾…è¯¥èµ„æºçš„çº¿ç¨‹å¾—åˆ°è¯¥èµ„æºè¿›è€Œè¿è¡Œï¼Œ
+ * åªæœ‰è°ƒç”¨äº†notify()æ–¹æ³•ï¼Œä¹‹å‰è°ƒç”¨wait()çš„çº¿ç¨‹æ‰ä¼šè§£é™¤waitçŠ¶æ€ï¼Œå¯ä»¥åŽ»å‚ä¸Žç«žäº‰åŒæ­¥èµ„æºé”ï¼Œè¿›è€Œå¾—åˆ°æ‰§è¡Œã€‚
+ * ï¼ˆæ³¨æ„ï¼šnotifyçš„ä½œç”¨ç›¸å½“äºŽå«é†’ç¡ç€çš„äººï¼Œè€Œå¹¶ä¸ä¼šç»™ä»–åˆ†é…ä»»åŠ¡ï¼Œå°±æ˜¯è¯´notifyåªæ˜¯è®©ä¹‹å‰è°ƒç”¨waitçš„çº¿ç¨‹æœ‰æƒåˆ©
+ * é‡æ–°å‚ä¸Žçº¿ç¨‹çš„è°ƒåº¦ï¼‰ï¼›
  * <p>
- * 2¡¢sleep()·½·¨¿ÉÒÔÔÚÈÎºÎµØ·½Ê¹ÓÃ£»wait()·½·¨ÔòÖ»ÄÜÔÚÍ¬²½·½·¨»òÍ¬²½¿éÖÐÊ¹ÓÃ£»
+ * 2ã€sleep()æ–¹æ³•å¯ä»¥åœ¨ä»»ä½•åœ°æ–¹ä½¿ç”¨ï¼›wait()æ–¹æ³•åˆ™åªèƒ½åœ¨åŒæ­¥æ–¹æ³•æˆ–åŒæ­¥å—ä¸­ä½¿ç”¨ï¼›
  * <p>
- * 3¡¢sleep()ÊÇÏß³ÌÏß³ÌÀà£¨Thread£©µÄ·½·¨£¬µ÷ÓÃ»áÔÝÍ£´ËÏß³ÌÖ¸¶¨µÄÊ±¼ä£¬µ«¼à¿ØÒÀÈ»±£³Ö£¬
- * ²»»áÊÍ·Å¶ÔÏóËø£¬µ½Ê±¼ä×Ô¶¯»Ö¸´£»wait()ÊÇObjectµÄ·½·¨£¬µ÷ÓÃ»á·ÅÆú¶ÔÏóËø£¬½øÈëµÈ´ý¶ÓÁÐ£¬
- * ´ýµ÷ÓÃnotify()/notifyAll()»½ÐÑÖ¸¶¨µÄÏß³Ì»òÕßËùÓÐÏß³Ì£¬²Å»á½øÈëËø³Ø£¬²»ÔÙ´Î»ñµÃ¶ÔÏóËø²Å»á½øÈëÔËÐÐ×´Ì¬£»
+ * 3ã€sleep()æ˜¯çº¿ç¨‹çº¿ç¨‹ç±»ï¼ˆThreadï¼‰çš„æ–¹æ³•ï¼Œè°ƒç”¨ä¼šæš‚åœæ­¤çº¿ç¨‹æŒ‡å®šçš„æ—¶é—´ï¼Œä½†ç›‘æŽ§ä¾ç„¶ä¿æŒï¼Œ
+ * ä¸ä¼šé‡Šæ”¾å¯¹è±¡é”ï¼Œåˆ°æ—¶é—´è‡ªåŠ¨æ¢å¤ï¼›wait()æ˜¯Objectçš„æ–¹æ³•ï¼Œè°ƒç”¨ä¼šæ”¾å¼ƒå¯¹è±¡é”ï¼Œè¿›å…¥ç­‰å¾…é˜Ÿåˆ—ï¼Œ
+ * å¾…è°ƒç”¨notify()/notifyAll()å”¤é†’æŒ‡å®šçš„çº¿ç¨‹æˆ–è€…æ‰€æœ‰çº¿ç¨‹ï¼Œæ‰ä¼šè¿›å…¥é”æ± ï¼Œä¸å†æ¬¡èŽ·å¾—å¯¹è±¡é”æ‰ä¼šè¿›å…¥è¿è¡ŒçŠ¶æ€ï¼›
  */
 
 
@@ -24,10 +24,10 @@ public class MultiThread {
         @Override
         public void run() {
             /*
-             *ÓÉÓÚ Thread1ºÍÏÂÃæThread2ÄÚ²¿run·½·¨ÒªÓÃÍ¬Ò»¶ÔÏó×÷Îª¼àÊÓÆ÷£¬
-             *Èç¹ûÓÃthisÔòThread1ºÍThrea2µÄthis²»ÊÇÍ¬Ò»¶ÔÏó
-             *ËùÒÔÓÃMultiThread.classÕâ¸ö×Ö½ÚÂë¶ÔÏó£¬
-             *µ±Ç°ÐéÄâ»úÀïÒýÓÃÕâ¸ö±äÁ¿Ê±Ö¸ÏòµÄ¶¼ÊÇÍ¬Ò»¸ö¶ÔÏó
+             *ç”±äºŽ Thread1å’Œä¸‹é¢Thread2å†…éƒ¨runæ–¹æ³•è¦ç”¨åŒä¸€å¯¹è±¡ä½œä¸ºç›‘è§†å™¨ï¼Œ
+             *å¦‚æžœç”¨thisåˆ™Thread1å’ŒThrea2çš„thisä¸æ˜¯åŒä¸€å¯¹è±¡
+             *æ‰€ä»¥ç”¨MultiThread.classè¿™ä¸ªå­—èŠ‚ç å¯¹è±¡ï¼Œ
+             *å½“å‰è™šæ‹Ÿæœºé‡Œå¼•ç”¨è¿™ä¸ªå˜é‡æ—¶æŒ‡å‘çš„éƒ½æ˜¯åŒä¸€ä¸ªå¯¹è±¡
              */
 
             synchronized (MultiThread.class) {
@@ -36,10 +36,10 @@ public class MultiThread {
 
                 try {
             /**
-             * ÊÍ·ÅËøÓÐÁ½ÖÖ·½Ê½£º(1)³ÌÐò×ÔÈ»Àë¿ª¼àÊÓÆ÷µÄ·¶Î§£¬
-             * ¼´Àë¿ªsynchronized¹Ø¼ü×Ö¹ÜÏ½µÄ´úÂë·¶Î§
-             * (2)ÔÚsynchronized¹Ø¼ü×Ö¹ÜÏ½µÄ´úÂëÄÚ²¿µ÷ÓÃ¼àÊÓÆ÷¶ÔÏóµÄwait()·½·¨
-             * ¡£ÕâÀïÊ¹ÓÃwait·½·¨
+             * é‡Šæ”¾é”æœ‰ä¸¤ç§æ–¹å¼ï¼š(1)ç¨‹åºè‡ªç„¶ç¦»å¼€ç›‘è§†å™¨çš„èŒƒå›´ï¼Œ
+             * å³ç¦»å¼€synchronizedå…³é”®å­—ç®¡è¾–çš„ä»£ç èŒƒå›´
+             * (2)åœ¨synchronizedå…³é”®å­—ç®¡è¾–çš„ä»£ç å†…éƒ¨è°ƒç”¨ç›‘è§†å™¨å¯¹è±¡çš„wait()æ–¹æ³•
+             * ã€‚è¿™é‡Œä½¿ç”¨waitæ–¹æ³•
              */
 
                     MultiThread.class.wait();
@@ -57,8 +57,8 @@ public class MultiThread {
     private static class Thread2 implements Runnable {
         @Override
         public void run() {
-            //notify·½·¨²¢²»ÊÍ·ÅËø£¬¼´Ê¹thread2µ÷ÓÃÁËÏÂÃæµÄsleep·½·¨ÐÝÏ¢10ms£¬µ«thread1ÈÔÈ»²»»áÖ´ÐÐ
-            //ÒòÎªthread2Ã»ÓÐÊÍ·ÅËø£¬ËùÒÔThread1µÃ²»µ½Ëø¶øÎÞ·¨Ö´ÐÐ
+            //notifyæ–¹æ³•å¹¶ä¸é‡Šæ”¾é”ï¼Œå³ä½¿thread2è°ƒç”¨äº†ä¸‹é¢çš„sleepæ–¹æ³•ä¼‘æ¯10msï¼Œä½†thread1ä»ç„¶ä¸ä¼šæ‰§è¡Œ
+            //å› ä¸ºthread2æ²¡æœ‰é‡Šæ”¾é”ï¼Œæ‰€ä»¥Thread1å¾—ä¸åˆ°é”è€Œæ— æ³•æ‰§è¡Œ
             synchronized (MultiThread.class) {
                 System.out.println("enter thread2 ...");
                 System.out.println("thread2 notify other thread can release wait status ...");

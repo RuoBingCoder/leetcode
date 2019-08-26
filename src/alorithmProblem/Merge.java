@@ -1,9 +1,9 @@
 package alorithmProblem;
 
 /**
- * @Authur: Ê¯½¨À×
+ * @Authur: çŸ³å»ºé›·
  * @Date:2018/12/7
- * ¹é²¢Á½¸öÓĞĞòÊı×é
+ * å½’å¹¶ä¸¤ä¸ªæœ‰åºæ•°ç»„
  */
 
 public class Merge {

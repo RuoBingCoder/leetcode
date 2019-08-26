@@ -2,8 +2,8 @@ package thread;
 
 
 /**
- * @Authur: 石建雷
- * @Date:2018/12/4
+ * @author : 石建雷
+ * @date :2018/12/4
  */
 
 public class ThreadTestTwo {
@@ -20,15 +20,15 @@ public class ThreadTestTwo {
 
     static class ThreadTest implements Runnable {
 
-        public int NoteBook = 80;
+        public int noteBook = 80;
 
         @Override
         public void run() {
 
-            while (NoteBook >= 0) {
+            while (noteBook >= 0) {
 
                 outPut();
-                NoteBook--;
+                noteBook--;
 
 
             }
@@ -38,13 +38,13 @@ public class ThreadTestTwo {
 
         public synchronized void outPut() {
 
-            if (NoteBook > 0) {
+            if (noteBook > 0) {
                 try {
                     Thread.sleep(20);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + ":" + NoteBook);
+                System.out.println(Thread.currentThread().getName() + ":" + noteBook);
             }
 
         }

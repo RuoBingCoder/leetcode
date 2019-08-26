@@ -44,19 +44,21 @@ class MySell implements Runnable {
 
 public class SellTicket {
     public static void main(String[] args) throws Exception {
-        new SellTicketDemo("A").start();
+        /*new SellTicketDemo("A").start();
         new SellTicketDemo("B").start();
-        new SellTicketDemo("C").start();
-        new Thread(new MySell(), "D").start();
-        new Thread(new MySell(), "E").start();
-        new Thread(new MySell(), "F").start();
+        new SellTicketDemo("C").start();*/
+        System.out.println("=========================================================");
+        MySell mySell = new MySell();
+        new Thread(mySell, "D").start();
+        new Thread(mySell, "E").start();
+        new Thread(mySell, "F").start();
 
-        for (int i = 10; i > 0; i--) {
+       /* for (int i = 10; i > 0; i--) {
             System.out.println(i);
             Thread.sleep(1000);
 
         }
-
+*/
 
     }
 

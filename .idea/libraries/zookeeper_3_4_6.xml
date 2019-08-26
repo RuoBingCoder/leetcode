@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="zookeeper-3.4.6">
+    <CLASSES>
+      <root url="jar://F:/jar/zookeeper-3.4.6.jar!/" />
+      <root url="jar://F:/jar/guava-27.0.1-jre.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

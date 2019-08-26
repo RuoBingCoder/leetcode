@@ -4,9 +4,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @Authur: Ê¯½¨À×
- * @Date:2018/12/6
- * Í¬²½Ò»¸öÀà
+ * @author : çŸ³å»ºé›·
+ * @date :2018/12/6
+ * åŒæ­¥ä¸€ä¸ªç±»
  */
 
 public class SynchronizedExampleClass {
@@ -22,8 +22,9 @@ public class SynchronizedExampleClass {
     public static void main(String[] args) {
         SynchronizedExampleClass e1=new SynchronizedExampleClass();
         SynchronizedExampleClass e2=new SynchronizedExampleClass();
-        ExecutorService executorService = Executors.newCachedThreadPool();  //´´½¨Ò»¸ö¶¨³¤Ïß³Ì³Ø£¬Ö§³Ö¶¨Ê±¼°ÖÜÆÚÐÔÈÎÎñÖ´ÐÐ¡£
-        //½Ó¿Ú java.util.concurrent.ExecutorService ±íÊöÁËÒì²½Ö´ÐÐµÄ»úÖÆ£¬²¢ÇÒ¿ÉÒÔÈÃÈÎÎñÔÚºóÌ¨Ö´ÐÐ¡£
+        ExecutorService executorService = Executors.newCachedThreadPool();
+        //åˆ›å»ºä¸€ä¸ªå®šé•¿çº¿ç¨‹æ± ï¼Œæ”¯æŒå®šæ—¶åŠå‘¨æœŸæ€§ä»»åŠ¡æ‰§è¡Œã€‚
+        //æŽ¥å£ java.util.concurrent.ExecutorService è¡¨è¿°äº†å¼‚æ­¥æ‰§è¡Œçš„æœºåˆ¶ï¼Œå¹¶ä¸”å¯ä»¥è®©ä»»åŠ¡åœ¨åŽå°æ‰§è¡Œã€‚
         executorService.execute(() -> e1.func2());
         executorService.execute(() -> e2.func2());
     }

@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ²âÊÔCollections½Ó¿ÚµÄ·½·¨
- * ArrayList£¬LinkedList£¬HashMap,StringBuilderÊÇ²»°²È«µÄ¡£
- * vector,HashTable,StringBufferÊÇÏß³Ì°²È«µÄ
+ * æµ‹è¯•Collectionsæ¥å£çš„æ–¹æ³•
+ * ArrayListï¼ŒLinkedListï¼ŒHashMap,StringBuilderæ˜¯ä¸å®‰å…¨çš„ã€‚
+ * vector,HashTable,StringBufferæ˜¯çº¿ç¨‹å®‰å…¨çš„
  *
- * @Authur: Ê¯½¨À×
- * @Date:2019/1/3
+ * @author : çŸ³å»ºé›·
+ * @date :2019/1/3
  */
 
 public class TestList {
@@ -26,7 +26,7 @@ public class TestList {
         list02.add("aaa");
         list02.add("ddd");
         list02.add("eee");
-        System.out.println(list01.containsAll(list02)); //  false  Ö»°üº¬ÁË "aaa"
+        System.out.println(list01.containsAll(list02)); //  false  åªåŒ…å«äº† "aaa"
         list01.retainAll(list02);
         System.out.println("list01:" + list01);  // list01:[aaa]
         list01.addAll(list02);

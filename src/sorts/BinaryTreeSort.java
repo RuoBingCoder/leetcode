@@ -42,23 +42,29 @@ public class BinaryTreeSort implements SortAlgorithm {
 
 		void insert(Node<T> node) {
 			if (less(node.value, value)){
-				if (left != null) left.insert(node);
-				else left = node;
+				if (left != null) {
+					left.insert(node);
+				} else {
+					left = node;
+				}
 			}
-			else {
-				if (right != null) right.insert(node);
-				else right = node;
+			else if (right != null) {
+				right.insert(node);
+			} else {
+				right = node;
 			}
 		}
 
 		void traverse(TreeVisitor<T> visitor) {
-			if ( left != null)
+			if ( left != null) {
 				left.traverse(visitor);
+			}
 
 			visitor.visit(this);
 
-			if ( right != null )
+			if ( right != null ) {
 				right.traverse(visitor );
+			}
 		}
 
 	}

@@ -6,6 +6,10 @@ package hello;
  */
 
 public class Demo {
+    private String name;
+
+
+
     public static void main(String[] args) {
 
         int f = 0;
@@ -19,6 +23,5 @@ public class Demo {
 
         }
     }
-
 
 }

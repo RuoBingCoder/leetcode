@@ -1,7 +1,5 @@
 package hello;
 
-import lintcode.TreeNode;
-
 import java.util.ArrayList;
 
 /**

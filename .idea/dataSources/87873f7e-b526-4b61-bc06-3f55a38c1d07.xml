@@ -6,254 +6,479 @@
     </root>
     <database id="2" parent="1" name="SPJ">
       <ObjectId>5</ObjectId>
+      <Collation>Chinese_PRC_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="db_sushe">
+      <ObjectId>9</ObjectId>
+      <Visible>1</Visible>
+    </database>
+    <database id="4" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Chinese_PRC_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Chinese_PRC_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Chinese_PRC_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="schoolwage">
+      <ObjectId>8</ObjectId>
       <Current>1</Current>
       <Visible>1</Visible>
       <Collation>Chinese_PRC_CI_AS</Collation>
     </database>
-    <database id="3" parent="1" name="master">
-      <ObjectId>1</ObjectId>
-      <Collation>Chinese_PRC_CI_AS</Collation>
-    </database>
-    <database id="4" parent="1" name="model">
-      <ObjectId>3</ObjectId>
-      <Collation>Chinese_PRC_CI_AS</Collation>
-    </database>
-    <database id="5" parent="1" name="msdb">
-      <ObjectId>4</ObjectId>
-      <Collation>Chinese_PRC_CI_AS</Collation>
-    </database>
-    <database id="6" parent="1" name="tempdb">
+    <database id="8" parent="1" name="tempdb">
       <ObjectId>2</ObjectId>
       <Collation>Chinese_PRC_CI_AS</Collation>
     </database>
-    <database id="7" parent="1" name="test">
+    <database id="9" parent="1" name="test">
       <ObjectId>6</ObjectId>
     </database>
-    <schema id="8" parent="2" name="INFORMATION_SCHEMA">
+    <database id="10" parent="1" name="wage">
+      <ObjectId>7</ObjectId>
+    </database>
+    <schema id="11" parent="3" name="INFORMATION_SCHEMA">
       <ObjectId>3</ObjectId>
     </schema>
-    <schema id="9" parent="2" name="db_accessadmin">
+    <schema id="12" parent="3" name="db_accessadmin">
       <ObjectId>16385</ObjectId>
     </schema>
-    <schema id="10" parent="2" name="db_backupoperator">
+    <schema id="13" parent="3" name="db_backupoperator">
       <ObjectId>16389</ObjectId>
     </schema>
-    <schema id="11" parent="2" name="db_datareader">
+    <schema id="14" parent="3" name="db_datareader">
       <ObjectId>16390</ObjectId>
     </schema>
-    <schema id="12" parent="2" name="db_datawriter">
+    <schema id="15" parent="3" name="db_datawriter">
       <ObjectId>16391</ObjectId>
     </schema>
-    <schema id="13" parent="2" name="db_ddladmin">
+    <schema id="16" parent="3" name="db_ddladmin">
       <ObjectId>16387</ObjectId>
     </schema>
-    <schema id="14" parent="2" name="db_denydatareader">
+    <schema id="17" parent="3" name="db_denydatareader">
       <ObjectId>16392</ObjectId>
     </schema>
-    <schema id="15" parent="2" name="db_denydatawriter">
+    <schema id="18" parent="3" name="db_denydatawriter">
       <ObjectId>16393</ObjectId>
     </schema>
-    <schema id="16" parent="2" name="db_owner">
+    <schema id="19" parent="3" name="db_owner">
       <ObjectId>16384</ObjectId>
     </schema>
-    <schema id="17" parent="2" name="db_securityadmin">
+    <schema id="20" parent="3" name="db_securityadmin">
       <ObjectId>16386</ObjectId>
     </schema>
-    <schema id="18" parent="2" name="dbo">
+    <schema id="21" parent="3" name="dbo">
       <ObjectId>1</ObjectId>
-      <IntrospectionTimestamp>2018-12-05.01:54:34.090</IntrospectionTimestamp>
+      <Current>1</Current>
+    </schema>
+    <schema id="22" parent="3" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="23" parent="3" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="24" parent="7" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="25" parent="7" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="26" parent="7" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="27" parent="7" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="28" parent="7" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="29" parent="7" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="30" parent="7" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="31" parent="7" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <schema id="32" parent="7" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="33" parent="7" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="34" parent="7" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2019-06-27.00:01:19.607</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <schema id="19" parent="2" name="guest">
+    <schema id="35" parent="7" name="guest">
       <ObjectId>2</ObjectId>
     </schema>
-    <schema id="20" parent="2" name="sys">
+    <schema id="36" parent="7" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <table id="21" parent="18" name="CLASS">
-      <ObjectId>1557580587</ObjectId>
-      <CreatedTimestamp>2018-12-04.05:56:05.223</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-04.05:56:05.223</ModifiedTimestamp>
+    <table id="37" parent="34" name="Attendance">
+      <ObjectId>1301579675</ObjectId>
+      <CreatedTimestamp>2018-12-11.04:34:20.177</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-02.18:22:58.183</ModifiedTimestamp>
     </table>
-    <table id="22" parent="18" name="SCLASS">
-      <ObjectId>1893581784</ObjectId>
-      <CreatedTimestamp>2018-12-05.00:58:33.957</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-05.00:58:33.957</ModifiedTimestamp>
+    <table id="38" parent="34" name="Change">
+      <ObjectId>1269579561</ObjectId>
+      <CreatedTimestamp>2018-12-11.04:33:21.247</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-29.04:14:28.510</ModifiedTimestamp>
     </table>
-    <table id="23" parent="18" name="STUDENT">
+    <table id="39" parent="34" name="Pay">
+      <ObjectId>1365579903</ObjectId>
+      <CreatedTimestamp>2018-12-11.04:35:36.203</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:35:36.203</ModifiedTimestamp>
+    </table>
+    <table id="40" parent="34" name="Refer">
+      <ObjectId>1845581613</ObjectId>
+      <CreatedTimestamp>2018-12-26.20:13:36.963</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-26.20:13:36.963</ModifiedTimestamp>
+    </table>
+    <table id="41" parent="34" name="StudentRoomManagementSystem">
+      <ObjectId>1618104805</ObjectId>
+      <CreatedTimestamp>2019-06-27.00:00:54.450</CreatedTimestamp>
+      <ModifiedTimestamp>2019-06-27.00:00:54.450</ModifiedTimestamp>
+    </table>
+    <table id="42" parent="34" name="Teacher">
+      <ObjectId>1205579333</ObjectId>
+      <CreatedTimestamp>2018-12-11.04:31:29.137</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-29.03:59:52.193</ModifiedTimestamp>
+    </table>
+    <table id="43" parent="34" name="Teacher1">
       <ObjectId>1525580473</ObjectId>
-      <CreatedTimestamp>2018-12-04.05:52:19.770</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-04.05:52:19.770</ModifiedTimestamp>
+      <CreatedTimestamp>2018-12-12.04:47:37.713</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-12.04:47:37.713</ModifiedTimestamp>
     </table>
-    <table id="24" parent="18" name="STUDENT_1">
-      <ObjectId>1941581955</ObjectId>
-      <CreatedTimestamp>2018-12-05.01:03:20.987</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-05.01:03:20.987</ModifiedTimestamp>
-    </table>
-    <column id="25" parent="21" name="SCLASS">
+    <view id="44" parent="34" name="Obtain_Wages">
+      <ObjectId>1042102753</ObjectId>
+      <SourceTextLength>85</SourceTextLength>
+      <CreatedTimestamp>2018-12-29.04:21:44.577</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-29.04:21:44.577</ModifiedTimestamp>
+    </view>
+    <routine id="45" parent="34" name="Total_pay">
+      <ObjectId>482100758</ObjectId>
+      <SourceTextLength>114</SourceTextLength>
+      <CreatedTimestamp>2018-12-27.23:39:14.393</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-27.23:39:14.393</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="46" parent="37" name="Tno">
       <Position>1</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="26" parent="21" name="SCLASS_NA">
+    <column id="47" parent="37" name="Overtime">
       <Position>2</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>int|0s</DataType>
     </column>
-    <column id="27" parent="21" name="STECHER">
+    <column id="48" parent="37" name="Absence">
       <Position>3</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>int|0s</DataType>
     </column>
-    <column id="28" parent="21" name="SSQUAD">
+    <column id="49" parent="37" name="Dates">
       <Position>4</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>int|0s</DataType>
     </column>
-    <index id="29" parent="21" name="PK__CLASS__C057E7C4904F101B">
-      <Position>1</Position>
+    <foreign-key id="50" parent="37" name="FK__Attendance__Tno__4E88ABD4">
+      <ObjectId>1317579732</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>SCLASS</ColNames>
-      <Clustering>1</Clustering>
-      <Unique>1</Unique>
-    </index>
-    <key id="30" parent="21" name="PK__CLASS__C057E7C4904F101B">
-      <ObjectId>1573580644</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-12-04.05:56:05.657</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-04.05:56:05.657</ModifiedTimestamp>
-      <ColNames>SCLASS</ColNames>
-      <UnderlyingIndexName>PK__CLASS__C057E7C4904F101B</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="31" parent="22" name="SCLASS">
+      <CreatedTimestamp>2018-12-11.04:34:20.187</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:34:20.187</ModifiedTimestamp>
+      <ColNames>Tno</ColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Teacher</RefTableName>
+      <RefKeyName>PK__Teacher__C450026D71BF1684</RefKeyName>
+      <RefColNames>Tno</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <trigger id="51" parent="37" name="AttendancePay">
+      <ObjectId>1298103665</ObjectId>
+      <SourceTextLength>792</SourceTextLength>
+      <CreatedTimestamp>2019-01-02.18:22:58.183</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-02.18:22:58.183</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="52" parent="38" name="Tno">
       <Position>1</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="32" parent="22" name="S_NAME">
+    <column id="53" parent="38" name="Title1">
       <Position>2</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="33" parent="22" name="S_TECH">
+    <column id="54" parent="38" name="Title2">
       <Position>3</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="34" parent="22" name="S_SQU">
+    <column id="55" parent="38" name="Dates">
       <Position>4</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>int|0s</DataType>
     </column>
-    <index id="35" parent="22" name="PK__SCLASS__C057E7C41EEF328B">
-      <Position>1</Position>
+    <foreign-key id="56" parent="38" name="FK__Change__Tno__4CA06362">
+      <ObjectId>1285579618</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>SCLASS</ColNames>
-      <Clustering>1</Clustering>
-      <Unique>1</Unique>
-    </index>
-    <key id="36" parent="22" name="PK__SCLASS__C057E7C41EEF328B">
-      <ObjectId>1909581841</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-12-05.00:58:33.967</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-05.00:58:33.967</ModifiedTimestamp>
-      <ColNames>SCLASS</ColNames>
-      <UnderlyingIndexName>PK__SCLASS__C057E7C41EEF328B</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
-    <column id="37" parent="23" name="SNO">
+      <CreatedTimestamp>2018-12-11.04:33:21.253</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:33:21.253</ModifiedTimestamp>
+      <ColNames>Tno</ColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Teacher</RefTableName>
+      <RefKeyName>PK__Teacher__C450026D71BF1684</RefKeyName>
+      <RefColNames>Tno</RefColNames>
+    </foreign-key>
+    <trigger id="57" parent="38" name="Change_pay">
+      <ObjectId>402100473</ObjectId>
+      <SourceTextLength>692</SourceTextLength>
+      <CreatedTimestamp>2018-12-27.23:23:41.850</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-27.23:23:41.850</ModifiedTimestamp>
+      <Events>IU</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <trigger id="58" parent="38" name="PayChange">
+      <ObjectId>1010102639</ObjectId>
+      <SourceTextLength>797</SourceTextLength>
+      <CreatedTimestamp>2018-12-29.04:14:28.510</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-29.04:14:28.510</ModifiedTimestamp>
+      <Events>IU</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="59" parent="39" name="Tno">
       <Position>1</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="38" parent="23" name="SNAME">
+    <column id="60" parent="39" name="Base">
       <Position>2</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>float|0s</DataType>
     </column>
-    <column id="39" parent="23" name="SAGE">
+    <column id="61" parent="39" name="Overpay">
       <Position>3</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>float|0s</DataType>
     </column>
-    <column id="40" parent="23" name="SGENDER">
+    <column id="62" parent="39" name="Docked">
       <Position>4</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>float|0s</DataType>
     </column>
-    <column id="41" parent="23" name="SADRESS">
+    <column id="63" parent="39" name="Wages">
       <Position>5</Position>
-      <DataType>char(10 char)|0s</DataType>
+      <DataType>float|0s</DataType>
+    </column>
+    <foreign-key id="64" parent="39" name="FK__Pay__Tno__52593CB8">
+      <ObjectId>1381579960</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-11.04:35:36.210</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:35:36.210</ModifiedTimestamp>
+      <ColNames>Tno</ColNames>
+      <RefTableId>1205579333</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Teacher</RefTableName>
+      <RefKeyName>PK__Teacher__C450026D71BF1684</RefKeyName>
+      <RefColNames>Tno</RefColNames>
+    </foreign-key>
+    <column id="65" parent="40" name="Title">
+      <Position>1</Position>
+      <DataType>char(20 char)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="23" name="SCLASS">
-      <Position>6</Position>
-      <DataType>char(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="66" parent="40" name="Salary">
+      <Position>2</Position>
+      <DataType>float|0s</DataType>
     </column>
-    <index id="43" parent="23" name="PK__STUDENT__CA1EE06C2967D800">
+    <index id="67" parent="40" name="PK__Refer__2CB664DDD53713AD">
       <Position>1</Position>
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>SNO</ColNames>
+      <ColNames>Title</ColNames>
       <Clustering>1</Clustering>
       <Unique>1</Unique>
     </index>
-    <key id="44" parent="23" name="PK__STUDENT__CA1EE06C2967D800">
+    <key id="68" parent="40" name="PK__Refer__2CB664DDD53713AD">
+      <ObjectId>1861581670</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-26.20:13:36.973</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-26.20:13:36.973</ModifiedTimestamp>
+      <ColNames>Title</ColNames>
+      <UnderlyingIndexName>PK__Refer__2CB664DDD53713AD</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="69" parent="41" name="C1">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="70" parent="42" name="Tno">
+      <Position>1</Position>
+      <DataType>char(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="42" name="Tname">
+      <Position>2</Position>
+      <DataType>char(20 char)|0s</DataType>
+    </column>
+    <column id="72" parent="42" name="Tsex">
+      <Position>3</Position>
+      <DataType>char(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="42" name="Tage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="42" name="Depart">
+      <Position>5</Position>
+      <DataType>char(20 char)|0s</DataType>
+    </column>
+    <column id="75" parent="42" name="Title">
+      <Position>6</Position>
+      <DataType>char(20 char)|0s</DataType>
+    </column>
+    <index id="76" parent="42" name="PK__Teacher__C450026D71BF1684">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Tno</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="77" parent="42" name="UQ__Teacher__48581FED50132494">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Tname</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="42" name="PK__Teacher__C450026D71BF1684">
+      <ObjectId>1221579390</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-11.04:31:29.140</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:31:29.140</ModifiedTimestamp>
+      <ColNames>Tno</ColNames>
+      <UnderlyingIndexName>PK__Teacher__C450026D71BF1684</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="79" parent="42" name="UQ__Teacher__48581FED50132494">
+      <ObjectId>1237579447</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-11.04:31:29.147</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:31:29.147</ModifiedTimestamp>
+      <ColNames>Tname</ColNames>
+      <UnderlyingIndexName>UQ__Teacher__48581FED50132494</UnderlyingIndexName>
+    </key>
+    <check id="80" parent="42" name="CK__Teacher__Tsex__4AB81AF0">
+      <ObjectId>1253579504</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-11.04:31:29.147</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-11.04:31:29.147</ModifiedTimestamp>
+      <ColNames>Tsex</ColNames>
+      <Predicate>[Tsex]=&apos;女&apos; OR [Tsex]=&apos;男&apos;</Predicate>
+    </check>
+    <trigger id="81" parent="42" name="BasicWage">
+      <ObjectId>978102525</ObjectId>
+      <SourceTextLength>301</SourceTextLength>
+      <CreatedTimestamp>2018-12-29.03:59:52.193</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-29.03:59:52.193</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <trigger id="82" parent="42" name="JobTitleChange">
+      <ObjectId>658101385</ObjectId>
+      <SourceTextLength>460</SourceTextLength>
+      <CreatedTimestamp>2018-12-29.03:42:15.337</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-29.03:42:15.337</ModifiedTimestamp>
+      <Events>U</Events>
+      <Turn>after-stmt</Turn>
+    </trigger>
+    <column id="83" parent="43" name="id">
+      <Position>1</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="84" parent="43" name="Tno">
+      <Position>2</Position>
+      <DataType>char(20 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="43" name="Tname">
+      <Position>3</Position>
+      <DataType>char(20 char)|0s</DataType>
+    </column>
+    <column id="86" parent="43" name="Tsex">
+      <Position>4</Position>
+      <DataType>char(10 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="43" name="Tage">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="43" name="Depart">
+      <Position>6</Position>
+      <DataType>char(20 char)|0s</DataType>
+    </column>
+    <column id="89" parent="43" name="Title">
+      <Position>7</Position>
+      <DataType>char(20 char)|0s</DataType>
+    </column>
+    <index id="90" parent="43" name="PK__Teacher1__C450026DD8214172">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Tno</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="91" parent="43" name="UQ__Teacher1__48581FEDA21FA872">
+      <Position>2</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Tname</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="92" parent="43" name="PK__Teacher1__C450026DD8214172">
       <ObjectId>1541580530</ObjectId>
       <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-12-04.05:52:19.787</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-04.05:52:19.787</ModifiedTimestamp>
-      <ColNames>SNO</ColNames>
-      <UnderlyingIndexName>PK__STUDENT__CA1EE06C2967D800</UnderlyingIndexName>
+      <CreatedTimestamp>2018-12-12.04:47:37.730</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-12.04:47:37.730</ModifiedTimestamp>
+      <ColNames>Tno</ColNames>
+      <UnderlyingIndexName>PK__Teacher1__C450026DD8214172</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="45" parent="24" name="SNO">
+    <key id="93" parent="43" name="UQ__Teacher1__48581FEDA21FA872">
+      <ObjectId>1557580587</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-12.04:47:37.737</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-12.04:47:37.737</ModifiedTimestamp>
+      <ColNames>Tname</ColNames>
+      <UnderlyingIndexName>UQ__Teacher1__48581FEDA21FA872</UnderlyingIndexName>
+    </key>
+    <check id="94" parent="43" name="CK__Teacher1__Tsex__5DCAEF64">
+      <ObjectId>1573580644</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-12-12.04:47:37.740</CreatedTimestamp>
+      <ModifiedTimestamp>2018-12-12.04:47:37.740</ModifiedTimestamp>
+      <ColNames>Tsex</ColNames>
+      <Predicate>[Tsex]=&apos;女&apos; OR [Tsex]=&apos;男&apos;</Predicate>
+    </check>
+    <column id="95" parent="44" name="Tno">
       <Position>1</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>char(20 char)|0s</DataType>
     </column>
-    <column id="46" parent="24" name="S_NAME">
+    <column id="96" parent="44" name="Obtain">
       <Position>2</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>float|0s</DataType>
     </column>
-    <column id="47" parent="24" name="S_AGE">
+    <column id="97" parent="44" name="Docked">
       <Position>3</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>float|0s</DataType>
     </column>
-    <column id="48" parent="24" name="S_GENDER">
+    <column id="98" parent="44" name="Wages">
       <Position>4</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>float|0s</DataType>
     </column>
-    <column id="49" parent="24" name="S_ADDR">
-      <Position>5</Position>
-      <DataType>varchar(30 char)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="50" parent="24" name="S_CLASS">
-      <Position>6</Position>
-      <DataType>varchar(10 char)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <index id="51" parent="24" name="PK__STUDENT___CA1EE06CA711103E">
-      <Position>1</Position>
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>SNO</ColNames>
-      <Clustering>1</Clustering>
-      <Unique>1</Unique>
-    </index>
-    <key id="52" parent="24" name="PK__STUDENT___CA1EE06CA711103E">
-      <ObjectId>1957582012</ObjectId>
-      <NameSurrogate>1</NameSurrogate>
-      <CreatedTimestamp>2018-12-05.01:03:20.997</CreatedTimestamp>
-      <ModifiedTimestamp>2018-12-05.01:03:20.997</ModifiedTimestamp>
-      <ColNames>SNO</ColNames>
-      <UnderlyingIndexName>PK__STUDENT___CA1EE06CA711103E</UnderlyingIndexName>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>

@@ -1,8 +1,8 @@
 package thread;
 
 /**
- * @Authur: 石建雷
- * @Date:2018/12/4
+ * @author : 石建雷
+ * @date :2018/12/4
  */
 
 public class ThreadTestOne implements Runnable {

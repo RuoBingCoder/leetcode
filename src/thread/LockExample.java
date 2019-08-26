@@ -6,8 +6,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Authur: Ê¯½¨À×
- * @Date:2018/12/6
+ * @author : çŸ³å»ºé›·
+ * @date :2018/12/6
  */
 
 public class LockExample {
@@ -21,7 +21,7 @@ public class LockExample {
                 System.out.print(i + " ");
             }
         } finally {
-            lock.unlock(); // È·±£ÊÍ·ÅËø£¬´Ó¶ø±ÜÃâ·¢ÉúËÀËø¡£
+            lock.unlock(); // ç¡®ä¿é‡Šæ”¾é”ï¼Œä»Žè€Œé¿å…å‘ç”Ÿæ­»é”ã€‚
         }
     }
 
@@ -31,6 +31,6 @@ public class LockExample {
         executorService.execute(() -> lockExample.func());
         executorService.execute(() -> lockExample.func());
 
-        //synchronized ÊÇ JVM ÊµÏÖµÄ£¬¶ø ReentrantLock ÊÇ JDK ÊµÏÖµÄ¡£
+        //synchronized æ˜¯ JVM å®žçŽ°çš„ï¼Œè€Œ ReentrantLock æ˜¯ JDK å®žçŽ°çš„ã€‚
     }
 }
