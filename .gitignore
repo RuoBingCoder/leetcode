@@ -11,3 +11,6 @@ leetcode-plugin/en/all.json
 out/
 src/io/dir/
 src/reflection/
+src/factory/
+.idea
+out
